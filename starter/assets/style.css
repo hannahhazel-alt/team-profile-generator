@@ -1,0 +1,125 @@
+/* Root variables for color scheme */
+:root {
+  --color-base-hue: 220; /* Base hue for color variations */
+  --color-bg-dark: hsl(
+    var(--color-base-hue),
+    100%,
+    18%
+  ); /* Dark background color based on hue */
+  --color-bg-light: hsl(
+    var(--color-base-hue),
+    100%,
+    88%
+  ); /* Light background color based on hue */
+}
+/* Body styling */
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-dark),
+    var(--color-bg-light)
+  );
+  background-size: cover;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+/* List item styling */
+li {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+/* Styling for list group items */
+.list-group-item {
+  background: linear-gradient(
+    to right,
+    hsl(180, 100%, 88%),
+    hsl(180, 100%, 98%)
+  );
+  border: 1px solid var(--color-bg-dark);
+}
+/* Styling for team heading */
+.team-heading {
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-light);
+  border-bottom: 5px solid var(--color-bg-light);
+}
+/* Styling for employee cards */
+.employee-card {
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-light);
+}
+/* Styling for generic cards */
+.card {
+  margin: 0.5rem;
+  padding: 0;
+  color: var(--color-bg-dark);
+  text-align: center;
+}
+/* Styling for card headers */
+.card-header {
+  background-color: var(--color-bg-light);
+  color: var(--color-bg-dark);
+  text-align: center;
+}
+/* Styling for engineer-specific icons and titles */
+.engineerIcon,
+.engineerTitle {
+  color: hsl(276, 100%, 38%);
+}
+/* Styling for intern-specific icons and titles */
+.internIcon,
+.internTitle {
+  color: hsl(101, 100%, 38%);
+}
+/* Styling for manager-specific icons and titles */
+.managerIcon,
+.managerTitle {
+  color: hsl(327, 100%, 38%);
+}
+/* Styling for engineer-specific card bodies */
+.engineerBody {
+  background: linear-gradient(
+    to bottom,
+    hsl(276, 100%, 38%),
+    var(--color-bg-light)
+  );
+}
+/* Styling for intern-specific card bodies */
+.internBody {
+  background: linear-gradient(
+    to bottom,
+    hsl(101, 100%, 38%),
+    var(--color-bg-light)
+  );
+}
+/* Styling for manager-specific card bodies */
+.managerBody {
+  background: linear-gradient(
+    to bottom,
+    hsl(327, 100%, 38%),
+    var(--color-bg-light)
+  );
+}
